@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulários HTML</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Formulários html</h1>
+    <form action="fd.php" method="get">
+        <!-- 1 - radio button -->
+        <div>
+            <label for="car-model">Escolha o modelo do seu carro:</label>
+            <div class="radio">
+                <input type="radio" value="bmw" name="car-model">
+                <label for="bmw">BMW</label>
+            </div>
+            <div class="radio">
+                <input type="radio" value="Ferrari" name="car-model">
+                <label for="Ferrari">Ferrari</label>
+            </div>
+            <div class="radio">
+                <input type="radio" value="Porshe" name="car-model">
+                <label for="Porshe">Porshe</label>
+            </div>
+        </div>
+
+        <!-- 2 - checkbox -->
+         <div>
+            <label for="opcionais">Selecione o tipo de Pneu:</label>
+            <div class="radio">
+                <input type="checkbox" name="opcionais[]" value="pneus-aro15">
+                <label for="pneus-aro15">Pneus aro 15</label>
+            </div>
+            <div class="radio">
+                <input type="checkbox" name="opcionais[]" value="pneus-aro16">
+                <label for="pneus-aro16">Pneus aro 16</label>
+            </div>
+            <div class="radio">
+                <input type="checkbox" name="opcionais[]" value="pneus-aro17">
+                <label for="pneus-aro17">Pneus aro 17</label>
+            </div>
+         </div>
+
+         <!-- 3 - datas -->
+          <div>
+            <label for="aniversario">Data de nasciment:</label>
+            <input type="date" name="aniversario">
+          </div>
+
+         <!-- 4 - arquivos -->
+          <div>
+            <label for="image">Insira sua imagem:</label>
+            <input type="file" name="image">
+          </div>
+
+          <!-- 5 - number -->
+           <div>
+            <label for="salary">Qual o seu salário mensal?</label>
+            <input type="number" name="salary" step="0.01">
+           </div>
+
+           <!-- 6 - emails -->
+            <div>
+                <label for="email">Digite o seu email:</label>
+                <input type="email" name="email">
+            </div>
+
+            <!-- 7 - value -->
+             <div>
+                <label for="value">digite algum valor:</label>
+                <input type="text" value="O meu valor é esse" name="value">
+             </div>
+             
+             <!-- 8 - disable -->
+              <div>
+                <p>tente mudar o valor:</p>
+                <input type="text" value="Não precisa preencher" disabled>
+              </div>
+
+              <!-- 9 - placeholder -->
+               <div>
+                <label for="currentjob">Digite sua profissão atual: </label>
+                <input type="text" name="currentjob" placeholder="No que você está trabalhando?">
+               </div>
+
+               <!-- 10 - required -->
+                <div>
+                    <label for="aniversario">Ano de nascimento</label>
+                    <input type="text" placeholder="digite o ano em que nasceu" required>
+                </div>
+            <!-- reset -->
+          <div>
+            <input type="reset" value="limpar">
+          </div>
+          <div>
+            <input type="submit" value="Enviar">
+          </div>
+    </form>    
+</body>
+</html>
