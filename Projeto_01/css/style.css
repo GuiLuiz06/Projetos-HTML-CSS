@@ -69,7 +69,40 @@ nav {
 /* main banner */
 .main-banner {
     background-image: url("/Projeto_01/img/mainbanner.png");
-    padding: 10rem 0;
     background-size: cover;
     background-position: center;
+    padding: 10rem 0;
+}
+
+.main-banner h1,
+.main-banner p {
+    color: red;
+    font-weight: bold;
+    text-align: center;
+    text-shadow: #000 3px 2px 3px;
+}
+.main-banner h1 {
+    font-size: 50px;
+}
+.main-banner p {
+    font-size: 30px;
+}
+/* services */
+.services-container p{
+    color: #000;
+}
+
+.services-container {
+    padding: 5rem 0;
+}
+.services-container ul {
+    display: flex;
+    width: 90%;
+    margin: 0 auto;
+}
+.services-container li {
+    flex: 1 1 200px;
+    list-style: none;
+    text-align: center;
+    padding: 2px
 }
