@@ -26,8 +26,9 @@ nav {
 }
 
 .logo {
-    width: 50px;
-    margin-top: 15px;
+    width: 60px;
+    margin-top: 10px;
+    border-radius: 10px;
 }
 
 .navbar-items {
@@ -104,5 +105,13 @@ nav {
     flex: 1 1 200px;
     list-style: none;
     text-align: center;
-    padding: 2px
+    padding: 20px
+}
+.fas {
+    font-size: 60px;
+    margin-bottom: 15px;
+}
+
+.fa-shield-alt {
+    color: 
 }
